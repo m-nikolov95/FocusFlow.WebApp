@@ -1,0 +1,18 @@
+import { JSX } from 'react';
+
+export function HeaderComponent(): JSX.Element {
+    return (
+        <div className='text-center'>
+            <nav className='flex flex-col md:flex-row gap-4 md:gap-12 text-lg mt-5 border-b border-gray-300 justify-center'>
+                <a href='#' className='text-primary hover:text-secondary'>Dashboard</a>
+                <a href='#' className='text-primary hover:text-secondary'>Tasks</a>
+                <a href='#' className='text-primary hover:text-secondary'>Analytics</a>
+            </nav>
+            <h1 className='text-6xl font-bold text-primary mt-20'>FocusFlow</h1>
+            <h1 className='text-5xl font-bold text-primary mt-3'>Work smarter. Stay focused</h1>
+            <p className='text-xl text-gray-600 mt-3'>FocusFlow helps you organise tasks, track focus time, and get AI guidance to boost your productivity.</p>
+        </div>
+    );
+}
+
+export default HeaderComponent;
