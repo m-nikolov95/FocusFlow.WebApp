@@ -11,6 +11,14 @@ export function HeaderComponent(): JSX.Element {
             <h1 className='text-6xl font-bold text-primary mt-6'>FocusFlow</h1>
             <h2 className='text-5xl font-bold text-primary mt-3'>Work smarter. Stay focused</h2>
             <p className='text-xl text-gray-600 mt-3'>FocusFlow helps you organise tasks, track focus time, and get AI guidance to boost your productivity.</p>
+            <div className='mt-8 flex justify-center gap-4'>
+                <button className='bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition'>
+                    Start For Free
+                </button>
+                <button className='bg-secondary text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition'>
+                    View Demo
+                </button>
+            </div>
         </div>
     );
 }

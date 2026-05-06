@@ -7,6 +7,7 @@ import { FeatureComponent } from './components/feature-component/FeatureComponen
 import { AiAssistantComponent } from './components/ai-assistent-component/AiAssistantComponent';
 import { SessionFocusComponent } from './components/session-focus-component/SessionFocusComponent';
 import { TasksComponent } from './components/tasks-component/TasksComponent';
+import { FooterComponent } from './components/feature-component/FooterComponent';
 
 export function App(): JSX.Element {
     return (
@@ -32,6 +33,7 @@ export function App(): JSX.Element {
                     icon={FaIcons.FaCalendarAlt({ className: 'text-secondary' })}
                     description='Synchronise your schedule and manage your tasks and events. Stay organized with seamless calendar integration and never miss deadlines or meetings.' />
             </div>
+            <FooterComponent />
         </div>
     );
 }
