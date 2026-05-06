@@ -7,7 +7,7 @@ import { FeatureComponent } from './components/feature-component/FeatureComponen
 import { AiAssistantComponent } from './components/ai-assistent-component/AiAssistantComponent';
 import { SessionFocusComponent } from './components/session-focus-component/SessionFocusComponent';
 import { TasksComponent } from './components/tasks-component/TasksComponent';
-import { FooterComponent } from './components/feature-component/FooterComponent';
+import { FooterComponent } from './components/footer-component/FooterComponent';
 
 export function App(): JSX.Element {
     return (
