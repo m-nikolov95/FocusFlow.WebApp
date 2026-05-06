@@ -12,7 +12,7 @@ export function App(): JSX.Element {
     return (
         <div className='flex flex-col items-center min-h-screen bg-gradient-to-br from-blue-100 via-violet-100'>
             <HeaderComponent />
-            <div className='mt-10 px-10 flex justify-center w-full sm:w-[40rem] md:w-[30rem] transition-all duration-300'>
+            <div className='mt-10 px-10 flex justify-center w-full sm:w-[30rem] transition-all duration-300'>
                 <SessionFocusComponent />
             </div>
             <div className='mt-10 px-10 flex justify-center w-full sm:w-[40rem] md:w-[50rem] lg:w-[65rem] transition-all duration-300'>
