@@ -58,7 +58,7 @@ export function SessionFocusComponent(): JSX.Element {
     }
 
     return (
-        <div className='flex flex-col justify-center lg:w-[25rem] lg:h-[12rem] p-6 rounded-xl bg-white border border-secondary/30 hover:shadow-2xl shadow-md transition'>
+        <div className='w-full p-6 rounded-xl bg-white border border-secondary/30 hover:shadow-2xl shadow-md transition'>
             <h3 className='font-semibold text-lg'>
                 Focus Session
             </h3>
