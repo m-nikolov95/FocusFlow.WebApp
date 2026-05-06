@@ -10,7 +10,7 @@ import { TasksComponent } from './components/tasks-component/TasksComponent';
 
 export function App(): JSX.Element {
     return (
-        <div className='flex flex-col items-center min-h-screen bg-gradient-to-br from-blue-100'>
+        <div className='flex flex-col items-center min-h-screen bg-gradient-to-br from-blue-100 via-violet-100'>
             <HeaderComponent />
             <div className='mt-10 px-10 flex justify-center w-full sm:w-[40rem] md:w-[30rem] transition-all duration-300'>
                 <SessionFocusComponent />
@@ -31,9 +31,6 @@ export function App(): JSX.Element {
                 <FeatureComponent title='CALENDAR'
                     icon={FaIcons.FaCalendarAlt({ className: 'text-secondary' })}
                     description='Synchronise your schedule and manage your tasks and events. Stay organized with seamless calendar integration and never miss deadlines or meetings.' />
-                <FeatureComponent title='WEEKLY INSIGHTS'
-                    icon={FaIcons.FaRegClock({ className: 'text-secondary' })}
-                    description='Keep track of your own thoughts and processes. Reflect on your week, identify patterns, and gain valuable insights to help you grow.' />
             </div>
         </div>
     );
