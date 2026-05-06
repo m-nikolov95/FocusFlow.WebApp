@@ -4,7 +4,7 @@ import * as FaIcons from 'react-icons/fa';
 
 import { HeaderComponent } from './components/header-component/HeaderComponent';
 import { FeatureComponent } from './components/feature-component/FeatureComponent';
-import { AiAssistentComponent } from './components/ai-assistent-component/AiAssistentComponent';
+import { AiAssistantComponent } from './components/ai-assistent-component/AiAssistantComponent';
 import { SessionFocusComponent } from './components/session-focus-component/SessionFocusComponent';
 import { TasksComponent } from './components/tasks-component/TasksComponent';
 
@@ -19,7 +19,7 @@ export function App(): JSX.Element {
                 <TasksComponent />
             </div>
             <div className='mt-10 px-10 flex justify-center w-full sm:w-[40rem] md:w-[50rem] lg:w-[65rem] transition-all duration-300'>
-                <AiAssistentComponent />
+                <AiAssistantComponent />
             </div>
             <div className='my-10 flex flex-wrap flex-col lg:flex-row justify-center gap-6 lg:gap-12 px-10 lg:px-0 '>
                 <FeatureComponent title='WEEKLY INSIGHTS'
