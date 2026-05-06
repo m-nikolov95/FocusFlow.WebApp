@@ -11,7 +11,7 @@ export function AiAssistentComponent(): JSX.Element {
     };
 
     return (
-        <div className='p-3 rounded-xl bg-white border border-secondary/30 w-[60rem] max-w-sm sm:max-w-md md:max-w-xl lg:max-w-2xl transition-all duration-300 ease-in-out'>
+        <div className='w-full p-3 rounded-xl bg-white border border-secondary/30 shadow-md'>
             <h3 className='font-semibold text-lg pb-3'>AI Assistent</h3>
             <textarea className='w-full p-3 focus:outline-none border-b border-gray-300 overflow-hidden resize-none'
                 placeholder='How may I help?'

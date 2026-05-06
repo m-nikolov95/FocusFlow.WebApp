@@ -58,7 +58,7 @@ export function SessionFocusComponent(): JSX.Element {
     }
 
     return (
-        <div className='flex flex-col justify-center lg:w-[25rem] lg:h-[12rem] p-6 rounded-xl bg-white border border-secondary/30 hover:shadow-2xl transition'>
+        <div className='flex flex-col justify-center lg:w-[25rem] lg:h-[12rem] p-6 rounded-xl bg-white border border-secondary/30 hover:shadow-2xl shadow-md transition'>
             <h3 className='font-semibold text-lg'>
                 Focus Session
             </h3>
@@ -69,9 +69,9 @@ export function SessionFocusComponent(): JSX.Element {
                 </h3>
             </div>
             <div className='flex flex-col sm:flex-row gap-6 sm:gap-12 justify-center'>
-                <button onClick={onStartButtonClick} className='text-primary px-6 py-1 rounded-xl border border-primary font-semibold'>Start</button>
-                <button onClick={onPauseButtonClick} className='text-secondary px-6 py-1 rounded-xl border border-secondary font-semibold'>Pause</button>
-                <button onClick={onResetButtonClick} className='text-primary px-6 py-1 rounded-xl border border-primary font-semibold'>Reset</button>
+                <button onClick={onStartButtonClick} className='text-primary px-6 py-1 rounded-xl border border-primary font-semibold hover:bg-primary/10'>Start</button>
+                <button onClick={onPauseButtonClick} className='text-secondary px-6 py-1 rounded-xl border border-secondary font-semibold hover:bg-secondary/10'>Pause</button>
+                <button onClick={onResetButtonClick} className='text-primary px-6 py-1 rounded-xl border border-primary font-semibold hover:bg-primary/10'>Reset</button>
             </div>
         </div>
     )
