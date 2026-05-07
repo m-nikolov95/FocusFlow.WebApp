@@ -62,7 +62,7 @@ export function SessionFocusComponent(): JSX.Element {
             <h3 className='font-semibold text-lg'>
                 Focus Session
             </h3>
-            <p className="text-gray-500">Start a 25-minute deep work session</p>
+            <p className="text-gray-500">Start a 25-minute deep work session.</p>
             <div className='flex justify-center py-6 mr-2'>
                 <p className='font-semibold text-2xl text-gray-500'>{formatTime()}</p>
             </div>

@@ -7,7 +7,7 @@ export function AiAssistantComponent(): JSX.Element {
 
     let textareaRef = useRef<HTMLTextAreaElement>(null);
 
-    const handleInput = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const handleInput = (): void => {
         if (textareaRef.current) {
             textareaRef.current.style.height = 'auto';
             textareaRef.current.style.height = textareaRef.current.scrollHeight + 'px';
@@ -15,15 +15,18 @@ export function AiAssistantComponent(): JSX.Element {
     };
 
     const onPromptAiButtonClicked = (): void => {
-        setPromptCountState((prevCount) => prevCount > 0 ?
-            prevCount - 1 :
-            prevCount
-        );
+        setPromptCountState((prevCount) => {
+            if (prevCount <= 0) {
+                return prevCount;
+            }
 
-        if (textareaRef.current && promptCountState > 0) {
-            textareaRef.current.value = '';
-            textareaRef.current.style.height = 'auto';
-        }
+            if (textareaRef.current) {
+                textareaRef.current.value = '';
+                textareaRef.current.style.height = 'auto';
+            }
+
+            return prevCount - 1;
+        });
     }
 
     return (
@@ -40,7 +43,7 @@ export function AiAssistantComponent(): JSX.Element {
                 </span>
             </div>
             <div className='flex items-center justify-between'>
-                <button className='text-gray-400 text-3xl'>+</button>
+                <button className='text-gray-400 text-3xl' aria-label='Make prompt'>+</button>
                 <p className='text-gray-400 mt-1'>Prompts: {promptCountState}</p>
             </div>
         </div>
