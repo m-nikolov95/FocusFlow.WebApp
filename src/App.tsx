@@ -4,6 +4,7 @@ import * as FaIcons from 'react-icons/fa';
 
 import { HeaderComponent } from './components/header-component/HeaderComponent';
 import { FeatureComponent } from './components/feature-component/FeatureComponent';
+import { AiAssistentComponent } from './components/ai-assistent-component/AiAssistentComponent';
 
 export function App(): JSX.Element {
     return (
@@ -19,6 +20,9 @@ export function App(): JSX.Element {
                 <FeatureComponent title='CALENDAR'
                     icon={FaIcons.FaCalendarAlt({ className: 'text-secondary' })}
                     description='Synchronise your schedule and manage your tasks and events. Stay organized with seamless calendar integration and never miss deadlines or meetings.' />
+            </div>
+            <div className='my-10'>
+                <AiAssistentComponent />
             </div>
         </div>
     );
