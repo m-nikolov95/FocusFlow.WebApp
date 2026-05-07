@@ -15,10 +15,10 @@ Before I even touched the mouse, the first thing I did was a rough sketch on pap
 
 ## Technology Choice
 
-Figma
-React
-TypeScript
-TailwindCSS
+Figma,
+React,
+TypeScript,
+TailwindCSS,
 
 ## Assumptions
 
@@ -27,3 +27,6 @@ TailwindCSS
 2. Color schemes and layouts that would not only catch the eye but would have a calming and pleasing effect on the user.
 
 3. While deciding and researching how I would like the UI to look, I decided TailwindCSS would be the best choice to achieve the closest match to my idea, and also the tool to achieve it in the fastest way possible.
+
+## Figma Design
+https://www.figma.com/site/7qgrz1zqoBVbJZ7DWYb2T4/FocusFlow?node-id=0-1&t=x33MYYNAiv7lQOoa-1
