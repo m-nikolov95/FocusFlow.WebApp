@@ -2,7 +2,7 @@ import { JSX } from 'react';
 
 export function HeaderComponent(): JSX.Element {
     return (
-        <div className='text-center'>
+        <header className='text-center'>
             <nav className='flex flex-col md:flex-row gap-4 md:gap-12 text-lg mt-5 border-b border-secondary/40 justify-center'>
                 <a href='#' className='text-primary hover:text-secondary'>Dashboard</a>
                 <a href='#' className='text-primary hover:text-secondary'>Tasks</a>
@@ -19,7 +19,7 @@ export function HeaderComponent(): JSX.Element {
                     View Demo
                 </button>
             </div>
-        </div>
+        </header>
     );
 }
 

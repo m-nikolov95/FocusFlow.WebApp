@@ -11,7 +11,7 @@ import { FooterComponent } from './components/footer-component/FooterComponent';
 
 export function App(): JSX.Element {
     return (
-        <div className='min-h-screen bg-gradient-to-br from-blue-100 via-violet-100 p-6 md:p-10 flex items-start justify-center'>
+        <main className='min-h-screen bg-gradient-to-br from-blue-100 via-violet-100 p-6 md:p-10 flex items-start justify-center'>
             <div className='flex flex-col items-center w-full max-w-6xl rounded-2xl shadow-2xl px-6 py-8 md:px-12 md:py-10'>
                 <HeaderComponent />
                 <div className='mt-10 flex justify-center w-full sm:w-[30rem] transition-all duration-300'>
@@ -36,7 +36,7 @@ export function App(): JSX.Element {
                 </div>
                 <FooterComponent />
             </div>
-        </div>
+        </main>
     );
 }
 

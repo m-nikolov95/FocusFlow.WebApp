@@ -43,7 +43,7 @@ export function AiAssistantComponent(): JSX.Element {
                 </span>
             </div>
             <div className='flex items-center justify-between'>
-                <button className='text-gray-400 text-3xl'>+</button>
+                <button className='text-gray-400 text-3xl' aria-label='Make prompt'>+</button>
                 <p className='text-gray-400 mt-1'>Prompts: {promptCountState}</p>
             </div>
         </div>
