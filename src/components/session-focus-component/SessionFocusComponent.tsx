@@ -64,9 +64,7 @@ export function SessionFocusComponent(): JSX.Element {
             </h3>
             <p className="text-gray-500">Start a 25-minute deep work session</p>
             <div className='flex justify-center py-6 mr-2'>
-                <h3 className='font-semibold text-2xl text-gray-500'>
-                    {formatTime()}
-                </h3>
+                <p className='font-semibold text-2xl text-gray-500'>{formatTime()}</p>
             </div>
             <div className='flex flex-col sm:flex-row gap-6 sm:gap-12 justify-center'>
                 <button onClick={onStartButtonClick} className='text-primary px-6 py-1 rounded-xl border border-primary font-semibold'>Start</button>
