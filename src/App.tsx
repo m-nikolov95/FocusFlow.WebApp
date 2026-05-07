@@ -5,11 +5,15 @@ import * as FaIcons from 'react-icons/fa';
 import { HeaderComponent } from './components/header-component/HeaderComponent';
 import { FeatureComponent } from './components/feature-component/FeatureComponent';
 import { AiAssistentComponent } from './components/ai-assistent-component/AiAssistentComponent';
+import { SessionFocusComponent } from './components/session-focus-component/SessionFocusComponent';
 
 export function App(): JSX.Element {
     return (
         <div className='flex flex-col items-center min-h-screen bg-gradient-to-br from-blue-100'>
             <HeaderComponent />
+            <div className='mt-10 flex flex-col lg:flex-row gap-6 lg:gap-12 px-10 lg:px-0'>
+                <SessionFocusComponent />
+            </div>
             <div className='mt-10 flex flex-col lg:flex-row gap-6 lg:gap-12 px-10 lg:px-0'>
                 <FeatureComponent title='WEEKLY INSIGHTS'
                     icon={FaIcons.FaRegClock({ className: 'text-secondary' })}
