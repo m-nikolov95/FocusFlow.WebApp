@@ -54,7 +54,6 @@ export function TasksComponent(): JSX.Element {
                         Add Task
                     </button>
                 </div>
-
             </div>
         </div>
     )
