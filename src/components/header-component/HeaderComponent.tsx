@@ -9,7 +9,7 @@ export function HeaderComponent(): JSX.Element {
                 <a href='#' className='text-primary hover:text-secondary'>Analytics</a>
             </nav>
             <h1 className='text-6xl font-bold text-primary mt-6'>FocusFlow</h1>
-            <h1 className='text-5xl font-bold text-primary mt-3'>Work smarter. Stay focused</h1>
+            <h2 className='text-5xl font-bold text-primary mt-3'>Work smarter. Stay focused</h2>
             <p className='text-xl text-gray-600 mt-3'>FocusFlow helps you organise tasks, track focus time, and get AI guidance to boost your productivity.</p>
         </div>
     );

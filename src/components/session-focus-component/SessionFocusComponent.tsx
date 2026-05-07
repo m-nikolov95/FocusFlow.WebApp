@@ -3,13 +3,13 @@ import { JSX, useEffect, useRef, useState } from 'react';
 import { SessionStateModel } from '../../state/session-state-model';
 
 export function SessionFocusComponent(): JSX.Element {
-    let [sesstionState, setSessionState] = useState<SessionStateModel>(new SessionStateModel());
+    let [sessionState, setSessionState] = useState<SessionStateModel>(new SessionStateModel());
 
     let intervalRef = useRef<NodeJS.Timeout | null>(null);
     let startTimeRef = useRef<number>(0);
 
     useEffect(() => {
-        if (sesstionState.isRunning) {
+        if (sessionState.isRunning) {
             intervalRef.current = setInterval(() => {
                 setSessionState(prevState => ({
                     ...prevState,
@@ -23,7 +23,7 @@ export function SessionFocusComponent(): JSX.Element {
                 clearInterval(intervalRef.current);
             }
         };
-    }, [sesstionState?.isRunning])
+    }, [sessionState?.isRunning])
 
     const onStartButtonClick = (): void => {
         setSessionState(prevState => ({
@@ -31,7 +31,7 @@ export function SessionFocusComponent(): JSX.Element {
             isRunning: true
         }));
 
-        startTimeRef.current = Date.now() - sesstionState.elapsedTimeMs;
+        startTimeRef.current = Date.now() - sessionState.elapsedTimeMs;
     }
 
     const onPauseButtonClick = (): void => {
@@ -49,8 +49,8 @@ export function SessionFocusComponent(): JSX.Element {
     }
 
     const formatTime = (): string => {
-        let minutes = Math.floor(sesstionState.elapsedTimeMs / (1000 * 60)) % 60;
-        let seconds = Math.floor(sesstionState.elapsedTimeMs / 1000) % 60;
+        let minutes = Math.floor(sessionState.elapsedTimeMs / (1000 * 60)) % 60;
+        let seconds = Math.floor(sessionState.elapsedTimeMs / 1000) % 60;
 
         const pad = (num: number) => num.toString().padStart(2, '0');
 
@@ -58,7 +58,7 @@ export function SessionFocusComponent(): JSX.Element {
     }
 
     return (
-        <div className='flex flex-col justify-center lg:w-[25rem] lg:h-[12rem] p-6 rounded-xl bg-white border border-secondary/30 hover:shadow-2xl transition'>
+        <div className='w-full p-6 rounded-xl bg-white border border-secondary/30 hover:shadow-2xl shadow-md transition'>
             <h3 className='font-semibold text-lg'>
                 Focus Session
             </h3>
@@ -67,9 +67,9 @@ export function SessionFocusComponent(): JSX.Element {
                 <p className='font-semibold text-2xl text-gray-500'>{formatTime()}</p>
             </div>
             <div className='flex flex-col sm:flex-row gap-6 sm:gap-12 justify-center'>
-                <button onClick={onStartButtonClick} className='text-primary px-6 py-1 rounded-xl border border-primary font-semibold'>Start</button>
-                <button onClick={onPauseButtonClick} className='text-secondary px-6 py-1 rounded-xl border border-secondary font-semibold'>Pause</button>
-                <button onClick={onResetButtonClick} className='text-primary px-6 py-1 rounded-xl border border-primary font-semibold'>Reset</button>
+                <button onClick={onStartButtonClick} className='text-primary px-6 py-1 rounded-xl border border-primary font-semibold hover:bg-primary/10'>Start</button>
+                <button onClick={onPauseButtonClick} className='text-secondary px-6 py-1 rounded-xl border border-secondary font-semibold hover:bg-secondary/10'>Pause</button>
+                <button onClick={onResetButtonClick} className='text-primary px-6 py-1 rounded-xl border border-primary font-semibold hover:bg-primary/10'>Reset</button>
             </div>
         </div>
     )
